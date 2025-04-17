@@ -9,7 +9,7 @@ export function Nav(){
                     <Link className={styles.linkReset} to='/'> Главная </Link>
                 </button>
                 <button className={styles.nav__button}>
-                    <Link className={styles.linkReset} to='/converter'>Конвертре </Link>
+                    <Link className={styles.linkReset} to='/converter'>Конвертер </Link>
                 </button>
                 <button className={styles.nav__button}>
                     <Link className={styles.linkReset} to='/about-us'>О работе  </Link>
