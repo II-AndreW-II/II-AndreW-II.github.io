@@ -1,0 +1,54 @@
+$primary-color: rgb(177, 184, 203);
+
+.linkReset {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+background: none;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 4rem;
+
+
+  .nav__button{
+  color: $primary-color;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 18px;
+    border: 1px solid $primary-color;
+    background: none;
+    transition: font-size 0.3s ease;
+    cursor: pointer;
+  }
+  .nav__button:hover{
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 24px;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  background: rgb(0 0 0);
+  margin-bottom: auto;
+  color: $primary-color;
+  z-index: 1;
+}
