@@ -16,20 +16,59 @@ background: none;
   flex-direction: row;
   justify-content: space-around;
   padding: 20px 4rem;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 40px;
 
+  @media (max-width: 768px) {
+    padding: 10px 1rem;
+    gap: 20px;
+  }
+
+  @media (max-width: 285px) {
+    padding: 5px;
+    gap: 10px;
+  }
 
   .nav__button{
-  color: $primary-color;
-    padding: 12px;
-    font-size: 24px;
-    border-radius: 18px;
+    color: $primary-color;
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 12px;
     border: 1px solid $primary-color;
     background: none;
-    transition: font-size 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
+    white-space: nowrap;
+    flex: 1;
+    text-align: center;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+
+    @media (max-width: 285px) {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
   }
   .nav__button:hover{
-    font-size: 30px;
+    font-size: 24px;
+    transform: scale(1.05);
+    
+    @media (max-width: 768px) {
+      font-size: 16px;
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 285px) {
+      font-size: 14px;
+      transform: scale(1.01);
+    }
   }
 }
 
